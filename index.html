@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myTable">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap.min.js"></script>
+<!--     <link rel="stylesheet" href="style.css" /> -->
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <div class="col-md-10 col-sm-9 small-padding">
+      <!-- start of center column -->
+      <div class="panel panel-default small-margin">
+        <div class="panel-heading">
+          <h2>My custom table directive</h2>
+        </div>
+        <div class="panel-body">
+           <div class="row">
+              <div class="col-md-12">
+                <a-table table-data="tableData" columns="columns" title="Table Title"></a-table>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
