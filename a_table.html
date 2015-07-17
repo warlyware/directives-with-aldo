@@ -16,11 +16,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="data in tableData">
+        <tr ng-repeat="data in tableData | slice:start():end()">
           <td ng-repeat="column in columns">{{data[column.label]}}</td>
         </tr>
         <!-- DATA WOULD BE HERE -->
       </tbody>
     </table>
+    <pagination total-items="pager.totalItems" items-per-page="pager.itemsPerPage" ng-model="pager.currentPage"></pagination>
+    page: {{page.currentPage}}
   </div>
 </div>
